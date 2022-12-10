@@ -18,6 +18,9 @@ export const useAwardStore = defineStore({
         let result = await axios({
           method: "GET",
           url: `${this.baseUrl}/awards`,
+          headers: {
+            access_token: localStorage.access_token
+          },
           params: {
             // params dan query di hitung argumen yg sama di dalam axios
             type: type,

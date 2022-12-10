@@ -14,6 +14,14 @@ class AwardController {
 
     static async getAwardPaginated(req, res, next) {
         try {
+
+            let userId = req.userLogged.id
+
+            if (!userId) {
+                throw {
+                    name: `forbidden to access`
+                }
+            }
             //? rumus kopas dari https://www.bezkoder.com/node-js-sequelize-pagination-mysql/
             const getPagination = (page, size) => {
                 const limit = size ? +size : 8;
