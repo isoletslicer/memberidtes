@@ -30,6 +30,7 @@ class AwardController {
 
             // filter by name
             const type = req.query.type;
+            const point = +req.query.point;
             console.log(type, `<< ini tipe`);
             const { page, size } = req.query;
 
@@ -56,6 +57,15 @@ class AwardController {
                 option.where = {
                     ...option.where,
                     [Op.or]: tampungType
+                }
+            }
+
+            if (point) {
+                option.where = {
+                    ...option.where,
+                    point: {
+                        [Op.gte]: point
+                    }
                 }
             }
 

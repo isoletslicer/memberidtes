@@ -14,14 +14,15 @@ export const useAwardStore = defineStore({
     qrPics: ''
   }),
   actions: {
-    async fetchAward(filter) {
+    async fetchAward(type, point) {
       try {
         let result = await axios({
           method: "GET",
           url: `${this.baseUrl}/awards`,
           params: {
             // params dan query di hitung argumen yg sama di dalam axios
-            type: filter,
+            type: type,
+            point: point,
             page: this.currentPage
           }
         })
