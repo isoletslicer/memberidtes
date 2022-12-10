@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Gift Card IDR 1.000.000",
+        "type": "vouchers",
+        "point": 500000,
+        "imgUrl": "https://img.freepik.com/free-photo/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-products_1258-63641.jpg"
+    },
+    {
+        "name": "Gift Card IDR 500.000",
+        "type": "vouchers",
+        "point": 250000,
+        "imgUrl": "https://img.freepik.com/free-photo/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-products_1258-63641.jpg"
+    },
+    {
+        "name": "Old Fashion Cake",
+        "type": "products",
+        "point": 100000,
+        "imgUrl": "https://img.freepik.com/free-photo/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-products_1258-63641.jpg"
+    }
+]
