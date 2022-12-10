@@ -1,6 +1,6 @@
 # award app
 
-**Created using Vue js 3 (Option API) and Express Js (Postgres DB)**
+**Created using Vue js 3 (Option API) and Express Js (Postgres DB)** \
 Make sure to clone this repo
 
 ## Project Setup
