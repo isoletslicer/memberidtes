@@ -44,10 +44,7 @@ class AwardController {
                 limit,
                 offset
             };
-            // type masih by type
-
-
-
+            // query type
             if (type) {
                 let splitted = type.split(',')
                 let tampungType = []
@@ -59,7 +56,7 @@ class AwardController {
                     [Op.or]: tampungType
                 }
             }
-
+            // query point
             if (point) {
                 option.where = {
                     ...option.where,

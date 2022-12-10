@@ -11,7 +11,6 @@ export const useAwardStore = defineStore({
     totalPages: 0,
     awards: [],
     awardByID: {},
-    qrPics: ''
   }),
   actions: {
     async fetchAward(type, point) {
@@ -27,7 +26,7 @@ export const useAwardStore = defineStore({
           }
         })
         // console.log(result.data, "<<<< masuk data nya bos");
-        console.log(result.data, '<<< ini all data')
+        // console.log(result.data, '<<< ini all data')
         this.awards = result.data.Award;
         this.currentPage = result.data.currentPage
         this.totalItems = result.data.totalItems
