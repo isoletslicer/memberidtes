@@ -10,8 +10,9 @@ Make sure to clone this repo
 3. Change directory based on folder name (client/server) in each terminal
 
 - **Server**
-  after you `cd server`
-  **Install depedency modules**
+
+  - after you `cd server`
+    **Install depedency modules**
 
   ```
   npm install
@@ -27,8 +28,9 @@ Make sure to clone this repo
   ```
 
 - **Client**
-  after you `cd client`
-  **Install depedency modules**
+
+  - after you `cd client`
+    **Install depedency modules**
 
   ```
   npm install
